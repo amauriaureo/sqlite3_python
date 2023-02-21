@@ -1,0 +1,37 @@
+- Modelar um banco de dados de aplicação TODO usando SQLite. 
+
+- Com esta base de dados, vamos criar a aplicação CLI TODO com as funcionalidades:
+
+1. Criar, atualizar e excluir um TODO;
+
+2. Criar, atualizar e excluir categorias;
+
+3. Listar todos os afazeres de um dia específico;
+
+4. Listar todas as categorias;
+
+5. Marcar uma tarefa como concluída.
+
+Para esta atividade, recomenda-se criar o banco de dados e as tabelas utilizando o DBeaver e, 
+para cada item da atividade, fazer um programa Python.
+
+---------------------------------------------------------------------
+Tabelas(Tarefa; Categoria)
+
+Colunas de:
+Tarefa(id, nome, data, status, categoria_id)
+Categoria(id, nome)
+
+        Execução:
+- Tarefas(5):
+Criar; 
+atualizar, 
+deletar, 
+listar afazeres de um dia específico, 
+marcar tarefa como conluída
+
+- Categorias(4):
+Criar; 
+atualizar, 
+deletar, 
+listar todas as categorias
