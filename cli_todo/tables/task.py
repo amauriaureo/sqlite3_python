@@ -6,6 +6,7 @@ cursor = conexao.cursor()
 
 sql = '''
 create table tarefa (
+    id INTEGER PRIMARY KEY NOT NULL,
     nome VARCHAR(20),
     data VARCHAR(20),
     status VARCHAR(20),
