@@ -82,3 +82,9 @@ def atualizar_tarefa():
 
 
 # atualizar_tarefa()
+def tarefas_por_dia():
+    pass
+
+
+def tarefas_completas():
+    pass
