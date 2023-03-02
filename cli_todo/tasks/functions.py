@@ -81,4 +81,4 @@ def atualizar_tarefa():
     conexao.close()
 
 
-atualizar_tarefa()
+# atualizar_tarefa()
