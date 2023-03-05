@@ -25,9 +25,9 @@ def criar_tarefa():
     cursor = conexao.cursor()
 
     print("Escreva os dados da Tarefa: ")
-    nome = input("Nome: ")
+    nome = input("Name: ")
     data = input("Data ")
-    status = input("Status: ")
+    status = input("Status(In progress or Completed): ")
 
     mostrar_categoria()
 
