@@ -87,4 +87,9 @@ def tarefas_por_dia():
 
 
 def tarefas_completas():
-    pass
+    conexao = sqlite3.connect('../todo.sqlite3')
+    cursor = conexao.cursor()
+    sql = 'select tarefa where status = "completed"'
+
+    valores = [status]
+    cursor.execute(sql, valores)

@@ -11,7 +11,6 @@ create table categoria (
 
 '''
 
-
 cursor.execute(sql)
 conexao.commit()
 conexao.close()
