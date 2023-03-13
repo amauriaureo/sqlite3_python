@@ -81,15 +81,26 @@ def atualizar_tarefa():
     conexao.close()
 
 
-# atualizar_tarefa()
 def tarefas_por_dia():
     pass
 
 
-def tarefas_completas():
-    conexao = sqlite3.connect('../todo.sqlite3')
-    cursor = conexao.cursor()
-    sql = 'select tarefa where status = "completed"'
+    def tarefas_completas():
+        conexao = sqlite3.connect('../todo.sqlite3')
+        cursor = conexao.cursor()
+        sql = 'select * from tarefa'
+        visualizar = cursor.execute(sql)
+        for dados in visualizar:
+            print(dados)
 
-    valores = [status]
-    cursor.execute(sql, valores)
+    #    valores = [status]
+        cursor.execute(sql)
+        conexao.commit()
+        conexao.close()
+
+
+    tarefas_completas()
+# https://stackoverflow.com/questions/75705007/some-functions-of-building-a-todolist-tasks-for-a-specific-day-and-mark-task-as
+
+
+# alter table add column
